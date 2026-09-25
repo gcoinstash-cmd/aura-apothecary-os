@@ -189,7 +189,7 @@ export default function ParfumeurAdminDashboard({ onExit }: { onExit: () => void
             <div>
               <div className="flex items-center space-x-2">
                 <span className="font-serif text-lg tracking-widest text-white uppercase">AURA ATELIER OS</span>
-                <span className="text-[10px] font-mono px-2 py-0.5 bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                <span className="text-xs font-semibold tracking-wider font-mono px-2 py-0.5 bg-amber-500/20 text-amber-300 border border-amber-500/30">
                   MASTER ORGAN PORTAL
                 </span>
               </div>
@@ -200,18 +200,18 @@ export default function ParfumeurAdminDashboard({ onExit }: { onExit: () => void
           <div className="flex items-center space-x-4">
             <div className="hidden md:flex items-center space-x-6 text-xs font-mono text-zinc-400">
               <div>
-                <span className="text-zinc-500">PIPELINE VALUE: </span>
+                <span className="text-zinc-300">PIPELINE VALUE: </span>
                 <span className="text-emerald-400 font-semibold">${totalCommissionsValue.toLocaleString()}</span>
               </div>
               <div>
-                <span className="text-zinc-500">DEPOSITS: </span>
+                <span className="text-zinc-300">DEPOSITS: </span>
                 <span className="text-white font-semibold">${totalDepositsCollected.toLocaleString()}</span>
               </div>
             </div>
 
             <button
               onClick={onExit}
-              className="flex items-center space-x-2 text-xs font-mono tracking-wider uppercase bg-[#1C1C21] hover:bg-[#27272A] text-zinc-300 hover:text-white px-4 py-2 border border-[#2E2E35] transition-all cursor-pointer"
+              className="flex items-center space-x-2 text-base font-semibold min-h-[44px] font-mono tracking-wider uppercase bg-[#1C1C21] hover:bg-[#27272A] text-zinc-300 hover:text-white px-5 py-3 min-h-[44px] border border-[#2E2E35] transition-all cursor-pointer"
             >
               <span>Back to Storefront</span>
               <X className="w-3.5 h-3.5" />
@@ -264,7 +264,7 @@ export default function ParfumeurAdminDashboard({ onExit }: { onExit: () => void
             {/* Search and Filter Bar */}
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-[#141418] p-4 border border-[#27272A]">
               <div className="relative w-full sm:w-96">
-                <Search className="w-4 h-4 text-zinc-500 absolute left-3 top-1/2 -translate-y-1/2" />
+                <Search className="w-4 h-4 text-zinc-300 absolute left-3 top-1/2 -translate-y-1/2" />
                 <input
                   type="text"
                   placeholder="Filter formulas, clients, or accords..."
@@ -291,7 +291,7 @@ export default function ParfumeurAdminDashboard({ onExit }: { onExit: () => void
                     <div>
                       <div className="flex items-center space-x-2 mb-1">
                         <span className="text-xs font-mono text-amber-400">{comm.formulaCode}</span>
-                        <span className="text-[10px] font-mono px-2 py-0.5 bg-[#222228] text-zinc-300">
+                        <span className="text-xs font-semibold tracking-wider font-mono px-2 py-0.5 bg-[#222228] text-zinc-300">
                           {comm.clientTier}
                         </span>
                       </div>
@@ -300,10 +300,10 @@ export default function ParfumeurAdminDashboard({ onExit }: { onExit: () => void
                     </div>
 
                     <div className="text-right">
-                      <span className="inline-block text-[11px] font-mono px-2.5 py-1 bg-amber-500/10 text-amber-300 border border-amber-500/30">
+                      <span className="inline-block text-xs font-semibold font-mono px-2.5 py-1 bg-amber-500/10 text-amber-300 border border-amber-500/30">
                         {comm.flaconStatus}
                       </span>
-                      <p className="text-xs font-mono text-zinc-500 mt-1">
+                      <p className="text-xs font-mono text-zinc-300 mt-1">
                         {comm.concentrationPct}% Concentration (Extrait)
                       </p>
                     </div>
@@ -312,15 +312,15 @@ export default function ParfumeurAdminDashboard({ onExit }: { onExit: () => void
                   {/* Accords Breakdown */}
                   <div className="bg-[#1A1A20] p-3 space-y-1.5 border border-[#24242C] text-xs font-mono">
                     <div className="flex justify-between">
-                      <span className="text-zinc-500">[TOP ACCORD]</span>
+                      <span className="text-zinc-300">[TOP ACCORD]</span>
                       <span className="text-zinc-300 text-right">{comm.topAccord}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-zinc-500">[HEART ACCORD]</span>
+                      <span className="text-zinc-300">[HEART ACCORD]</span>
                       <span className="text-zinc-300 text-right">{comm.heartAccord}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-zinc-500">[BASE ACCORD]</span>
+                      <span className="text-zinc-300">[BASE ACCORD]</span>
                       <span className="text-amber-200/90 text-right">{comm.baseAccord}</span>
                     </div>
                   </div>
@@ -344,9 +344,9 @@ export default function ParfumeurAdminDashboard({ onExit }: { onExit: () => void
                   {/* Pricing and Action */}
                   <div className="pt-2 border-t border-[#24242C] flex items-center justify-between text-xs font-mono">
                     <div>
-                      <span className="text-zinc-500">Deposit Paid: </span>
+                      <span className="text-zinc-300">Deposit Paid: </span>
                       <span className="text-white font-medium">${comm.depositAmount}</span>
-                      <span className="text-zinc-500 ml-2">Total: </span>
+                      <span className="text-zinc-300 ml-2">Total: </span>
                       <span className="text-emerald-400 font-medium">${comm.totalPrice}</span>
                     </div>
 
@@ -374,7 +374,7 @@ export default function ParfumeurAdminDashboard({ onExit }: { onExit: () => void
               <div className="overflow-x-auto">
                 <table className="w-full text-left font-mono text-xs">
                   <thead>
-                    <tr className="border-b border-[#27272A] text-zinc-500">
+                    <tr className="border-b border-[#27272A] text-zinc-300">
                       <th className="pb-3 uppercase tracking-wider">Botanical / Essence</th>
                       <th className="pb-3 uppercase tracking-wider">Terroir & Origin</th>
                       <th className="pb-3 uppercase tracking-wider">Extraction Method</th>
@@ -391,11 +391,11 @@ export default function ParfumeurAdminDashboard({ onExit }: { onExit: () => void
                         <td className="py-4 text-zinc-400">{rm.extraction}</td>
                         <td className="py-4 font-semibold text-zinc-200">
                           {rm.stockGrams}g 
-                          <span className="text-[10px] text-zinc-500 ml-1 font-normal">(Min: {rm.minThresholdGrams}g)</span>
+                          <span className="text-xs font-semibold tracking-wider text-zinc-300 ml-1 font-normal">(Min: {rm.minThresholdGrams}g)</span>
                         </td>
                         <td className="py-4 text-amber-300">${rm.costPerGram.toFixed(2)}</td>
                         <td className="py-4">
-                          <span className={`text-[10px] px-2 py-0.5 ${
+                          <span className={`text-xs font-semibold tracking-wider px-2 py-0.5 ${
                             rm.status === 'Low Inventory' 
                               ? 'bg-rose-500/20 text-rose-300 border border-rose-500/30'
                               : 'bg-emerald-500/10 text-emerald-300 border border-emerald-500/20'
@@ -417,17 +417,17 @@ export default function ParfumeurAdminDashboard({ onExit }: { onExit: () => void
             <div className="bg-[#141418] p-6 border border-[#27272A] space-y-2">
               <span className="text-xs font-mono text-zinc-400 uppercase tracking-wider">Average Flacon Retainer</span>
               <p className="font-serif text-3xl text-white font-medium">$3,875</p>
-              <p className="text-[11px] font-mono text-emerald-400">↑ 18% vs standard niche luxury perfume</p>
+              <p className="text-xs font-semibold font-mono text-emerald-400">↑ 18% vs standard niche luxury perfume</p>
             </div>
             <div className="bg-[#141418] p-6 border border-[#27272A] space-y-2">
               <span className="text-xs font-mono text-zinc-400 uppercase tracking-wider">Active Maceration Volume</span>
               <p className="font-serif text-3xl text-white font-medium">18.4 Liters</p>
-              <p className="text-[11px] font-mono text-zinc-400">Aging at 4°C in sealed borosilicate glass</p>
+              <p className="text-xs font-semibold font-mono text-zinc-400">Aging at 4°C in sealed borosilicate glass</p>
             </div>
             <div className="bg-[#141418] p-6 border border-[#27272A] space-y-2">
               <span className="text-xs font-mono text-zinc-400 uppercase tracking-wider">Grasse Supply Line Status</span>
               <p className="font-serif text-3xl text-emerald-400 font-medium">100% Certified</p>
-              <p className="text-[11px] font-mono text-zinc-400">IFRA 51st Amendment Compliant</p>
+              <p className="text-xs font-semibold font-mono text-zinc-400">IFRA 51st Amendment Compliant</p>
             </div>
           </div>
         )}

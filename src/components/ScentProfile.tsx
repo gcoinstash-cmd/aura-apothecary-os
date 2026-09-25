@@ -124,7 +124,7 @@ export const ScentProfile: React.FC<ScentProfileProps> = ({ productName, notes, 
 
       {/* 1. Header Section with Semantic SEO and Structured Typography */}
       <header className="mb-16 md:mb-20 text-center max-w-2xl mx-auto">
-        <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-stone-500 block mb-3">
+        <span className="font-mono text-xs font-semibold tracking-wider uppercase tracking-[0.25em] text-stone-500 block mb-3">
           Scent Profile
         </span>
         <h2 className="font-serif text-4xl md:text-5xl font-light text-stone-900 tracking-tight leading-tight">
@@ -145,7 +145,7 @@ export const ScentProfile: React.FC<ScentProfileProps> = ({ productName, notes, 
             role="tab"
             aria-selected={activeTier === tier}
             aria-controls={`scent-tier-panel-${tier}`}
-            className={`px-4 py-2 text-[10px] uppercase tracking-wider font-mono border transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-stone-400 ${
+            className={`px-4 py-2 text-xs font-semibold tracking-wider uppercase tracking-wider font-mono border transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-stone-400 ${
               activeTier === tier 
                 ? 'bg-stone-900 border-stone-900 text-white' 
                 : 'bg-transparent border-stone-200 text-stone-500 hover:text-stone-800 hover:border-stone-400'
@@ -275,13 +275,13 @@ export const ScentProfile: React.FC<ScentProfileProps> = ({ productName, notes, 
                     {tierInfo.top.title}
                   </h3>
                 </div>
-                <div className="flex items-center gap-1.5 text-stone-500 font-mono text-[10px] uppercase tracking-wider">
+                <div className="flex items-center gap-1.5 text-stone-500 font-mono text-xs font-semibold tracking-wider uppercase tracking-wider">
                   <Wind size={13} aria-hidden="true" />
                   <span>Duration: {tierInfo.top.duration}</span>
                 </div>
               </header>
 
-              <p className="text-stone-600 font-sans text-xs md:text-sm leading-relaxed font-light mb-6">
+              <p className="text-stone-600 font-sans text-base font-semibold leading-relaxed font-light mb-6">
                 {tierInfo.top.role}
               </p>
 
@@ -301,12 +301,12 @@ export const ScentProfile: React.FC<ScentProfileProps> = ({ productName, notes, 
                       </h5>
                     </header>
                     {note.origin && (
-                      <p className="text-[10px] font-mono text-stone-500 mb-1 italic">
+                      <p className="text-xs font-semibold tracking-wider font-mono text-stone-500 mb-1 italic">
                         {note.origin}
                       </p>
                     )}
                     {note.description && (
-                      <p className="text-stone-600 font-sans text-[11px] leading-relaxed font-light">
+                      <p className="text-stone-600 font-sans text-xs font-semibold leading-relaxed font-light">
                         {note.description}
                       </p>
                     )}
@@ -338,13 +338,13 @@ export const ScentProfile: React.FC<ScentProfileProps> = ({ productName, notes, 
                     {tierInfo.heart.title}
                   </h3>
                 </div>
-                <div className="flex items-center gap-1.5 text-stone-500 font-mono text-[10px] uppercase tracking-wider">
+                <div className="flex items-center gap-1.5 text-stone-500 font-mono text-xs font-semibold tracking-wider uppercase tracking-wider">
                   <Heart size={13} aria-hidden="true" />
                   <span>Duration: {tierInfo.heart.duration}</span>
                 </div>
               </header>
 
-              <p className="text-stone-600 font-sans text-xs md:text-sm leading-relaxed font-light mb-6">
+              <p className="text-stone-600 font-sans text-base font-semibold leading-relaxed font-light mb-6">
                 {tierInfo.heart.role}
               </p>
 
@@ -364,12 +364,12 @@ export const ScentProfile: React.FC<ScentProfileProps> = ({ productName, notes, 
                       </h5>
                     </header>
                     {note.origin && (
-                      <p className="text-[10px] font-mono text-stone-500 mb-1 italic">
+                      <p className="text-xs font-semibold tracking-wider font-mono text-stone-500 mb-1 italic">
                         {note.origin}
                       </p>
                     )}
                     {note.description && (
-                      <p className="text-stone-600 font-sans text-[11px] leading-relaxed font-light">
+                      <p className="text-stone-600 font-sans text-xs font-semibold leading-relaxed font-light">
                         {note.description}
                       </p>
                     )}
@@ -401,13 +401,13 @@ export const ScentProfile: React.FC<ScentProfileProps> = ({ productName, notes, 
                     {tierInfo.base.title}
                   </h3>
                 </div>
-                <div className="flex items-center gap-1.5 text-stone-500 font-mono text-[10px] uppercase tracking-wider">
+                <div className="flex items-center gap-1.5 text-stone-500 font-mono text-xs font-semibold tracking-wider uppercase tracking-wider">
                   <Anchor size={13} aria-hidden="true" />
                   <span>Duration: {tierInfo.base.duration}</span>
                 </div>
               </header>
 
-              <p className="text-stone-600 font-sans text-xs md:text-sm leading-relaxed font-light mb-6">
+              <p className="text-stone-600 font-sans text-base font-semibold leading-relaxed font-light mb-6">
                 {tierInfo.base.role}
               </p>
 
@@ -427,12 +427,12 @@ export const ScentProfile: React.FC<ScentProfileProps> = ({ productName, notes, 
                       </h5>
                     </header>
                     {note.origin && (
-                      <p className="text-[10px] font-mono text-stone-500 mb-1 italic">
+                      <p className="text-xs font-semibold tracking-wider font-mono text-stone-500 mb-1 italic">
                         {note.origin}
                       </p>
                     )}
                     {note.description && (
-                      <p className="text-stone-600 font-sans text-[11px] leading-relaxed font-light">
+                      <p className="text-stone-600 font-sans text-xs font-semibold leading-relaxed font-light">
                         {note.description}
                       </p>
                     )}
@@ -451,7 +451,7 @@ export const ScentProfile: React.FC<ScentProfileProps> = ({ productName, notes, 
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
           <div className="flex items-center gap-2">
             <ShieldCheck size={16} className="text-stone-500" />
-            <span className="font-mono text-[10px] uppercase tracking-widest text-stone-500">
+            <span className="font-mono text-xs font-semibold tracking-wider uppercase tracking-widest text-stone-500">
               Merchant Schema Certified (E-Commerce Ready) 
             </span>
           </div>
@@ -473,7 +473,7 @@ export const ScentProfile: React.FC<ScentProfileProps> = ({ productName, notes, 
                 <h4 className="font-mono text-[10.5px] uppercase tracking-wider text-white font-bold block">
                   JSON-LD Product Schema Console
                 </h4>
-                <p className="text-[10px] text-stone-400 mt-1">
+                <p className="text-xs font-semibold tracking-wider text-stone-400 mt-1">
                   Generated in real-time mapping state of: <strong className="text-stone-250 font-medium">{productName}</strong>. Ready for search injection.
                 </p>
               </div>
@@ -497,7 +497,7 @@ export const ScentProfile: React.FC<ScentProfileProps> = ({ productName, notes, 
 
             {/* Structured Schema output */}
             <div className="relative">
-              <pre className="text-[11px] font-mono leading-relaxed text-stone-300 max-h-72 overflow-y-auto bg-stone-950 p-4 border border-zinc-800 scrollbar-thin">
+              <pre className="text-xs font-semibold font-mono leading-relaxed text-stone-300 max-h-72 overflow-y-auto bg-stone-950 p-4 border border-zinc-800 scrollbar-thin">
                 {schemaJsonString}
               </pre>
             </div>
