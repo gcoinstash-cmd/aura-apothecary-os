@@ -398,7 +398,7 @@ export default function App() {
 
         {/* SIGNATURE SELECTION CARDS (HOUSE MODE ONLY) - THE TACTILE GHOST GRID */}
         {!isLabMode && (
-          <section className="mb-24" aria-label="Signature Curated Scents">
+          <section id="scent" className="mb-24 scroll-mt-20" aria-label="Signature Curated Scents">
             <header className="mb-10 text-center md:text-left">
               <span className="font-mono text-[9px] uppercase tracking-[0.25em] text-stone-450 block mb-2">
                 Curated Collections
@@ -926,7 +926,7 @@ export default function App() {
         </div>
 
         {/* ZEN METRICS & SCIENTIFIC METHOD ARTICLE */}
-        <section className="mt-24 border-t border-stone-205 pt-16 grid grid-cols-1 md:grid-cols-3 gap-12 text-stone-700" aria-label="Aura Synesthesia Science">
+        <section id="lab" className="mt-24 border-t border-stone-205 pt-16 grid grid-cols-1 md:grid-cols-3 gap-12 text-stone-700 scroll-mt-20" aria-label="Aura Synesthesia Science">
           <article>
             <h4 className="font-serif text-xl font-light text-stone-900 mb-4">
               01 // Volatility Index
@@ -956,7 +956,7 @@ export default function App() {
         </section>
 
         {/* PHILOSOPHY FOOTER MARQUEE */}
-        <section className="mt-20 border-y border-stone-200 py-10 text-center" aria-label="Aura Philosophy Quote">
+        <section id="studio" className="mt-20 border-y border-stone-200 py-10 text-center scroll-mt-20" aria-label="Aura Philosophy Quote">
           <p className="font-serif italic text-lg text-stone-600 tracking-wide max-w-3xl mx-auto leading-relaxed">
             "Artisanal luxury is in the margin. The blank canvas is as essential as the paint. The dry stone is as evocative as the flower."
           </p>
